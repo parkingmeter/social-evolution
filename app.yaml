@@ -4,6 +4,29 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
+default_expiration: "30d"
+
+skip_files:
+- ^(.*/)?app\.yaml
+- ^(.*/)?app\.yml
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*/RCS/.*
+- ^(.*/)?\..*
+- ^(.*/)?tests$
+- ^(.*/)?test$
+- ^test/(.*/)?
+- ^COPYING.LESSER
+- ^README\..*
+- \.gitignore
+- ^\.git/.*
+- \.*\.lint$
+- ^fabfile\.py
+- ^testrunner\.py
+- ^grunt\.js
+- ^node_modules/(.*/)?
+
 handlers:
 - url: /img
   static_dir: static/img
@@ -20,8 +43,17 @@ handlers:
 - url: /sitemap.xml
   static_files: static/sitemap.xml
   upload: static/sitemap.xml
-- url: /.*
+- url: /
   script: socialEvoMain.app
+- url: /game
+  script: socialEvoMain.app
+- url: /about/(.*)
+  script: socialEvoMain.app
+- url: /.*
+  script: notFound.app
+
+error_handlers:
+- file: templates/default_error.html
 
 libraries:
 - name: jinja2

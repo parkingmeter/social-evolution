@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="/css/base.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Questrial|Quantico' rel='stylesheet' type='text/css'>
+	<title>Server Error | {{ exception }} - Social Evolution</title>
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <meta name="description" content="default error {{ exception }}">
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-27991505-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+
+<body>
+	<div id="top_line"></div>
+	<div id="top_bar"></div>
+	<div id="content">
+		<div id="logo">
+		</div>
+		<div id="top_nav">
+    	<ul id="top_nav_menu">
+    		<li><a href="/">Home</a></li>
+    		<li><a href="/game">The Game</a></li>
+    		<li><a href="/about/idea">The Idea</a></li>
+    		<li><a href="/about/blog">The Blog</a></li>
+    		<li><a href="/about/get-involved">Get Involved</a></li>
+    	</ul>
+		</div>
+
+		<div id="content_main">
+      <p class="label">Error: {{ exception }}</p>
+      <h2>What could have caused this?</h2>
+      <ul>
+        <li>Well, something technical went wrong on our site.</li>
+        <li>We might have removed the page when we redesigned our website.</li>
+        <li>Or the link you clicked might be old and does not work anymore.</li>
+        <li>Or you might have accidentally typed the wrong URL in the address bar.</li>
+      </ul>
+
+      <h2>What you can do?</h2>
+      <ul>
+        <li>You might try retyping the URL and trying again.</li>
+        <li>Or we could take you back to the <a href="/">home page</a>. </li>
+      </ul>
+
+      <div>
+        <strong>One more thing:</strong><br />
+        If you want to help us fix this issue, we are here to help.
+        Please contact us and <a href="/contact/?exception={{ exception }}-{{ url }}">let us know what went wrong</a>.
+      </div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>

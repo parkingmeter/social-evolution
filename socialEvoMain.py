@@ -1,4 +1,5 @@
 import jinja2
+import logging
 import os
 import webapp2
 from google.appengine.api import users
@@ -80,9 +81,19 @@ def get_login(uri):
         url_linktext = 'Login'
     return (url, welcome_text, url_linktext)
 
+def handle_404(request, response, exception):
+    logging.exception(exception)
+    template_values = {
+        'exception': exception,
+    }
+    template = jinja_environment.get_template('default_error.html')
+    response.write(template.render(template_values))
+    response.set_status(404)
+
 app = webapp2.WSGIApplication([('/', MainPage),
-                               ('/play-the-social-evolution-game', GamePage),
-                               ('/the-idea-behind-social-evolution-the-game', IdeaPage),
-                               ('/the-social-evolution-blog', BlogPage),
-                               ('/how-to-get-involved', GetInvolvedPage),
+                               ('/game', GamePage),
+                               ('/about/idea', IdeaPage),
+                               ('/about/blog', BlogPage),
+                               ('/about/get-involved', GetInvolvedPage),
                                ], debug=True)
+app.error_handlers[404] = handle_404
