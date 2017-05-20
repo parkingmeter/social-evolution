@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	{% block head %}
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="css/base.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Questrial|Quantico' rel='stylesheet' type='text/css'>
+	<title>{% block title %}{% endblock %} - Social Evolution</title>
+	{% endblock %}
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-27991505-1']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+{% block body_tag %}
+<block>
+{% endblock %}
+	<div id="top_line"></div>
+	<div id="top_bar">
+		<div id="login_box">
+			{% block login_box %}
+			{{ welcome_text }}
+			<a href="{{ login_url }}" rel="nofollow">{{ login_text }}</a>
+			{% endblock %}
+		</div>
+	</div>
+	<div id="content">
+		<div id="logo">
+		</div>
+		<div id="top_nav">
+			{% block top_nav %}
+			{% endblock %}
+		</div>
+		<div id="content_main">
+			{% block content_main %}
+			{{ msg }}
+			{% endblock %}
+		</div>
+	</div>
+	<div id="footer">
+		{% block footer %}{% endblock %}
+	</div>
+</body>
+</html>

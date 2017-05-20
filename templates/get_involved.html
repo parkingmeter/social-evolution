@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block title %}
+  Welcome
+{% endblock %}
+
+{% block body_tag %}
+  {{ super() }}
+{% endblock %}
+
+{% block login_box %}
+  {{ super() }}
+{% endblock %}
+
+{% block top_nav %}
+	<ul id="top_nav_menu">
+		<li><a href="/">Home</a></li>
+		<li><a href="/the-idea-behind-social-evolution-the-game">The Idea</a></li>
+		<li><a href="/the-social-evolution-blog">The Blog</a></li>
+		<li><a href="/play-the-social-evolution-game">The Game</a></li>
+		<li><a href="/how-to-get-involved">Get Involved</a></li>
+	</ul>
+{% endblock %}
+
+{% block content_main %}
+  <p><span class="huge-text">This page intentionally left blank ...</span></p>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

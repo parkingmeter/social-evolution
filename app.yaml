@@ -1,0 +1,28 @@
+application: social-evolution
+version: 0-1-dev
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /img
+  static_dir: static/img
+- url: /css
+  static_dir: static/css
+- url: /js
+  static_dir: static/js
+- url: /favicon.ico
+  static_files: static/img/favicon.ico
+  upload: static/img/favicon.ico
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
+- url: /sitemap.xml
+  static_files: static/sitemap.xml
+  upload: static/sitemap.xml
+- url: /.*
+  script: socialEvoMain.app
+
+libraries:
+- name: jinja2
+  version: latest
