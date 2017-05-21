@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block head %}
+ 	<link href="css/index.css" rel="stylesheet" type="text/css" media="screen" />
+  {{ super() }}
+{% endblock %}
+
+{% block title %}
+  Welcome
+{% endblock %}
+
+{% block body_tag %}
+  {{ super() }}
+{% endblock %}
+
+{% block login_box %}
+  {{ super() }}
+{% endblock %}
+
+{% block top_nav %}
+	<ul id="top_nav_menu">
+		<li><a href="/">Home</a></li>
+		<li><a href="/game">The Game</a></li>
+		<li><a href="/about/idea">The Idea</a></li>
+		<li><a href="/about/blog">The Blog</a></li>
+		<li><a href="/about/get-involved">Get Involved</a></li>
+	</ul>
+{% endblock %}
+
+{% block content_main %}
+<div id="index-top-left-content">
+	<p><span class="huge-text">In a not so distant future ...</span></p>
+	<p class="indent">Everything has changed. Nations have torn apart from ever
+    diverging and powerful idiologies. Complete freedom in isolation.
+    Technological utopia under authoritarianism. Where will you fit in?<p>
+</div>
+<div id="index-top-right-content">
+	<div id="a-box">.</div>
+</div>
+<div id="index-bottom-content">
+	<p class="indent">This game and page are under heavy development. Watch this
+    space!<p>
+</div>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

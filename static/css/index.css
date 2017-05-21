@@ -1,0 +1,62 @@
+/* Home Page CSS
+ *
+ *
+ */
+ 
+ 
+#index-top-left-content {
+	height: 400px;
+	width: 550px;
+	float: left;
+	font-size: 1.8em;
+	border-color: #6DDCE4;
+	border-style: solid;
+	border-top-width: 2px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	margin-left: -198px;
+	padding-left: 198px;
+}
+
+#index-top-left-content p {
+	padding-right: 25px;
+}
+
+#index-top-left-content .huge-text {
+	font-size: 2em;
+}
+ 
+#index-top-right-content {
+	height: 400px;
+	width: 648px;
+	margin-right: -202px;
+	float: right;
+	border-color: #6DDCE4;
+	border-style: solid;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 0px;
+}
+ 
+#index-bottom-content {
+	width: 100%;
+	float: left;
+	margin-top: 40px;
+}
+
+#a-box {
+	width: 450px;
+	height: 450px;
+	float: left;
+	margin-top: -27px;
+	margin-left: 50px;
+	margin-bottom: -27px;
+	background: #012D44;
+}
+
+.indent {
+	padding-left: 50px;
+}
+ 

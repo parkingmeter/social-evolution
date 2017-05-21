@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+{% block title %}
+  Welcome
+{% endblock %}
+
+{% block body_tag %}
+  {{ super() }}
+{% endblock %}
+
+{% block login_box %}
+  {{ super() }}
+{% endblock %}
+
+{% block top_nav %}
+	<ul id="top_nav_menu">
+		<li><a href="/">Home</a></li>
+		<li><a href="/game">The Game</a></li>
+		<li><a href="/about/idea">The Idea</a></li>
+		<li><a href="/about/blog">The Blog</a></li>
+		<li><a href="/about/get-involved">Get Involved</a></li>
+	</ul>
+{% endblock %}
+
+{% block content_main %}
+  <p><span class="huge-text">This page intentionally left blank ...</span></p>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

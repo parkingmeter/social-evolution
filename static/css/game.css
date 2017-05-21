@@ -1,0 +1,25 @@
+/* Game Page CSS
+ *
+ *
+ */
+
+body {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#gameCanvas {
+	background-color: white;
+	border-style: solid;
+	border-color: #012D44;
+}
+
+#gameWindow {
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 90%;
+	width: 90%;
+}
