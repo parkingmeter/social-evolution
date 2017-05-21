@@ -2,11 +2,11 @@
  *
  *
  */
- 
- 
+
+
 #index-top-left-content {
 	height: 400px;
-	width: 500px;
+	width: 550px;
 	float: left;
 	font-size: 1.8em;
 	border-color: #6DDCE4;
@@ -26,10 +26,10 @@
 #index-top-left-content .huge-text {
 	font-size: 2em;
 }
- 
+
 #index-top-right-content {
 	height: 400px;
-	width: 698px;
+	width: 648px;
 	margin-right: -202px;
 	float: right;
 	border-color: #6DDCE4;
@@ -39,7 +39,7 @@
 	border-bottom-width: 2px;
 	border-left-width: 0px;
 }
- 
+
 #index-bottom-content {
 	width: 100%;
 	float: left;
@@ -59,4 +59,3 @@
 .indent {
 	padding-left: 50px;
 }
- 
